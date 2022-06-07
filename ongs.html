@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SerelePets</title>
+	<link rel="icon" type="image/x-icon" href="img/fav-pets.ico">
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.pets.css">	
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap">	
+
+    <!-- Arquivos JS -->	
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/script-pets.js" type="text/javascript"></script>
+	
+</head>
+
+<body>
+
+	<!-- Barra de Navegação (menu principal) -->
+    <nav class="navbar navbar-default navbar-fixed-top menu-top" role="navigation">
+		<div class="container">
+		
+			<!-- Dependendo do tamanho da tela a barra de navegação pode se agrupar ou voltar a se expandir.
+				Em telas pequenas, os links do menu são substituídos por um botão no canto superior esquerdo.
+				Nessa situação, somente quando o botão é clicado, os links serão mostrados. -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meu-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button>
+				<!-- Logo Site -->
+				<a class="navbar-left" href="index.html"><img src="img/logo-hor.png" id="main-logo" alt="logo"/></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="meu-menu">
+				<!-- Lista de Páginas Disponíveis -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="ongs.html">Instituições/ONGs</a></li>
+					<li><a href="ajuda.html">Como Ajudar?</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">SerelePets
+						<span class="caret"></span></a></a>
+						<ul class="dropdown-menu" id="drop-pets">
+						  <li><a href="adocao.html">Adoção</a></li>
+						  <li><a href="adotados.html">Adotados</a></li>
+						</ul>						
+					</li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>			
+		
+		</div>
+	</nav>
+	
+	<!-- Conteúdo Principal -->
+	<main class="main-div" id="main">
+	
+		<!-- Portfolio Section -->
+		<section class="page-section ong" id="ong">
+			<div class="container">
+			
+				<div class="row row-title">			
+					<span class="icon-title"><img alt="pata" src="img/pata.png" class=""></span>			
+					<h1 class="text-left title">Instituições / ONGs</h1>
+				</div>				
+
+				<p class="text-left lead">Várias Instituições e ONG's em Fortaleza e proximidades atuam na causa animal.
+				Vamos conhecer um pouco mais sobre esse trabalho?</p>
+			
+				<div class="row">
+				
+					<!-- ONG Item 1 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-1">
+							<img alt="ONG 1" src="img/ong-lazaro.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Abrigo São Lázaro</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+									<img src="img/site-w.png" id="site-sl" class="btn-pets social" alt="site">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/abrigosaolazaro/">
+									<img src="img/instagram-w.png" id="instagram-sl" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/saolazaro/">
+									<img src="img/facebook-w.png" id="facebook-sl" class="btn-pets social" alt="facebook">
+								</a>
+							</li>							
+						</ul>											
+					</figure>
+
+					<!-- ONG Item 2 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-2">
+							<img alt="ONG 2" src="img/ong-causa.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Causa Pet</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/causapet/">
+									<img src="img/instagram-w.png" id="instagram-cp" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/Causa-Pet-1973233892921658/">
+									<img src="img/facebook-w.png" id="facebook-cp" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+						</ul>						
+					</figure>
+
+					<!-- ONG Item 3 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-3">
+							<img alt="ONG 3" src="img/ong-apata.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">APATA Ceará</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.apatace.org/">
+									<img src="img/site-w.png" id="site-ap" class="btn-pets social" alt="site">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/apata_ceara/">
+									<img src="img/instagram-w.png" id="instagram-ap" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/apataceajuda/">
+									<img src="img/facebook-w.png" id="facebook-ap" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.youtube.com/user/ApataCeara">
+									<img src="img/youtube-w.png" id="youtube-ap" class="btn-pets social" alt="youtube">
+								</a>
+							</li>							
+						</ul>						
+					</figure>					
+
+					<!-- ONG Item 4 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-4">
+							<img alt="ONG 4" src="img/ong-grupopa.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">GPA</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/gpa_grupodeprotecaoanimal/">
+									<img src="img/instagram-w.png" id="instagram-gpa" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>						
+					</figure>
+
+					<!-- ONG Item 5 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-5">
+							<img alt="ONG 5" src="img/ong-abrace.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">ABRACE Causa Animal</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://pt-br.facebook.com/AbraceUmaCausaAnimal/">
+									<img src="img/facebook-w.png" id="facebook-ab" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/ong.abrace/">
+									<img src="img/instagram-w.png" id="instagram-ab" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>						
+					</figure>
+
+					<!-- ONG Item 6 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-6">
+							<img alt="ONG 6" src="img/ong-apf.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Adoção de Pet Fortaleza</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/groups/149337803775097">
+									<img src="img/facebook-w.png" id="facebook-apf" class="btn-pets" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/adocaodepetfortaleza/">
+									<img src="img/instagram-w.png" id="instagram-apf" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>						
+					</figure>
+
+					<!-- ONG Item 7 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-7">
+							<img alt="ONG 7" src="img/ong-aca.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Adote um Cão Amigo</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/adoteumcaoamigoce/">
+									<img src="img/instagram-w.png" id="instagram-ca" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>							
+					</figure>
+					
+					<!-- ONG Item 8 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-8">
+							<img alt="ONG 7" src="img/ong-adote-amor.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Adote um Amor Pet</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/adoteumamorpet/">
+									<img src="img/instagram-w.png" id="instagram-ca" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>							
+					</figure>
+
+					<!-- ONG Item 8 -->
+					<figure class="col-sm-6 col-lg-4 text-center ong-item">
+						<a href="" data-toggle="modal" data-target="#ong-modal-9">
+							<img alt="ONG 7" src="img/ong-au.png" class="img-fluid img-responsive ong-img">
+						</a>
+						<h3 class="ong-title">Animais Universitários</h3>
+						<ul class="list-inline">
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/animaisuniversitarios/">
+									<img src="img/instagram-w.png" id="instagram-ca" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+						</ul>							
+					</figure>					
+
+				</div>
+			</div>
+		</section>		
+
+		<button id="myBtn" title="Voltar ao início">
+			<img src="img/top.png" id="top-img" class="img-fluid" alt="imagem">
+		</button>
+
+		<!-- Destaque das Imagens (Modal) -->
+		
+		<!-- ONG Modal 1 -->
+		<div class="modal fade" id="ong-modal-1" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 1-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Abrigo São Lázaro</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 1-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-sl.jpg" alt="ONG 1">
+							</center>							
+							<p class="ong-p">O abrigo foi fundado em 1996 por Rosane Dantas, que desde criança ama os animais. Ela e seu
+							avô Leônidas Dantas viram uma pessoa jogar um cachorro ainda filhotinho no lixo e pegaram pra criar, ele foi
+							chamado de Paul, que viveu com eles por 17 anos.</p>
+							<p class="ong-p">Depois dele chegou um gatinho, que foi atropelado e perdeu os movimentos das pernas, também 
+							foi recolhido da rua e recebeu os primeiros cuidados.</p>
+							<p class="ong-p">Assim foram chegando outros animais, que parece que já sabiam que casa poderiam pedir ajuda.</p>
+							<p class="ong-p">Hoje a ONG são Lázaro se orgulha de ser a maior ong de proteção animal do Ceará, se orgulha
+							por já ter mudado a vida de milhares de animais e muda até hoje.</p>
+							<h6 class="ong-h"><b>Fonte:</b> https://abrigosaolazaro.org.br/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 2 -->
+		<div class="modal fade" id="ong-modal-2" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 2-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Causa Pet</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 2-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-causa-hor.png" alt="ONG 2">
+							</center>							
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 3 -->
+		<div class="modal fade" id="ong-modal-3" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 3-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">APATA Ceará</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 3-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-apata-hor.png" alt="ONG 3">
+							</center>							
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ONG Modal 4 -->
+		<div class="modal fade" id="ong-modal-4" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 4-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Grupo de Proteção Animal</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 4-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-gpa-hor.png" alt="ONG 4">
+							</center>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<!-- ONG Modal 5 -->
+		<div class="modal fade" id="ong-modal-5" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 5-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">ABRACE Causa Animal</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 5-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-abrace-hor.png" alt="ONG 5">
+							</center>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 6 -->
+		<div class="modal fade" id="ong-modal-6" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 6-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Adoção de Pet Fortaleza</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 6-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-apf-hor.png" alt="ONG 6">
+							</center>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 7 -->
+		<div class="modal fade" id="ong-modal-7" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 7-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Adote um Cão Amigo</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 7-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-aca-hor.png" alt="ONG 7">
+							</center>							
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 8 -->
+		<div class="modal fade" id="ong-modal-8" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 8-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Adote um Amor Pet</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 8-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-aa-hor.png" alt="ONG 8">
+							</center>							
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ONG Modal 9 -->
+		<div class="modal fade" id="ong-modal-9" role="dialog">		
+			<div class="modal-dialog modal-lg">
+				<!-- Conteúdo da Modal 9-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Animais Universitários</h4>
+					</div>
+					<div class="modal-body">
+							<!-- Imagem da Modal 9-->
+							<center>
+								<img class="img-responsive ong-modal" src="img/ong-au-hor.png" alt="ONG 9">
+							</center>							
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. </p>
+							<p class="ong-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<p class="ong-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+							labore et dolore magna aliqua. </p>
+							<h6 class="ong-h"><b>Fonte:</b> https://www.lipsum.com/</h6>							
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</main>
+
+
+	<footer>
+
+		<div class="footer-above"> <!-- Footer Superior -->
+			<div class="container">
+				<div class="row">
+					<!-- Footer: Primeira Coluna (logo) -->
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<a href="index.html"><img src="img/logo-vert-light.png" id="simple-logo" class="img-fluid" alt="logo simples"></a>
+					</div>
+					<!-- Footer: Segunda Coluna (redes sociais) -->					
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<!-- Redes Sociais: Lista Superior -->
+						<ul class="list-inline" id="list-footer">
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/">
+									<img src="img/facebook-w.png" id="facebook-icon" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/">
+									<img src="img/instagram-w.png" id="instagram-icon" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://twitter.com/">
+									<img src="img/twitter-w.png" id="twitter.icon" class="btn-pets social" alt="twitter">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.youtube.com/">
+									<img src="img/youtube-w.png" id="youtube-icon" class="btn-pets social" alt="youtube">
+								</a>
+								</a>
+							</li>	
+						</ul>							
+					</div>
+					<!-- Footer: Terceira Coluna -->						
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<img src="img/ft-temp.png" id="ft-img" class="img-fluid img-responsive" alt="imagem">							
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-below"> <!-- Footer Inferior -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; 2022 Projeto Gráfico 3 – Todos os direitos reservados</p>
+                    </div>					
+                </div>
+            </div>
+        </div>
+	
+	</footer>
+
+
+</body>
+
+<html>

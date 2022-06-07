@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SerelePets</title>
+	<link rel="icon" type="image/x-icon" href="img/fav-pets.ico">
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.pets.css">	
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap">	
+
+    <!-- Arquivos JS -->	
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/script-pets.js" type="text/javascript"></script>
+	
+</head>
+
+<body>
+
+	<!-- Barra de Navegação (menu principal) -->
+    <nav class="navbar navbar-default navbar-fixed-top menu-top" role="navigation">
+		<div class="container">
+		
+			<!-- Dependendo do tamanho da tela a barra de navegação pode se agrupar ou voltar a se expandir.
+				Em telas pequenas, os links do menu são substituídos por um botão no canto superior esquerdo.
+				Nessa situação, somente quando o botão é clicado, os links serão mostrados. -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meu-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button>
+				<!-- Logo Site -->
+				<a class="navbar-left" href="index.html"><img src="img/logo-hor.png" id="main-logo" alt="logo"/></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="meu-menu">
+				<!-- Lista de Páginas Disponíveis -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ongs.html">Instituições/ONGs</a></li>
+					<li><a href="ajuda.html">Como Ajudar?</a></li>
+					<li class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">SerelePets
+						<span class="caret"></span></a></a>
+						<ul class="dropdown-menu" id="drop-pets">
+						  <li><a href="adocao.html">Adoção</a></li>
+						  <li><a href="adotados.html">Adotados</a></li>
+						</ul>						
+					</li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>			
+		
+		</div>
+	</nav>
+	
+	<!-- Conteúdo Principal -->
+	<main class="main-div" id="main">
+	
+		<!-- Adoção Section -->
+		<section class="page-section ong" id="adocao">
+			<div class="container">
+
+				<div class="row row-title">			
+					<span class="icon-title"><img alt="pata" src="img/pata.png" class=""></span>			
+					<h1 class="text-left title">Animais para adoção</h1>
+				</div>			
+			
+				<p class="text-left lead">Adoção é um ato de amor, adote um animal e você terá um companheiro para todas as horas.
+				Mas atenção, adotar é coisa séria! Você precisa estar ciente das responsabilidades de adotar um animal, se está pronto 
+				para esse passo pode ter certeza que vai ser o maior beneficiado nessa convivência.</p>							
+			
+				<div class="row gallery-div">
+				
+					<!-- Pet Item 1 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-1">
+							<img alt="Pet 1" src="img/ad2-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Dionísio</h3>
+						<p class="ong-subtitle">Aprox. 1 ano, vacinas básicas, </br>castração garantida
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+
+					<!-- Pet Item 2 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-2">
+							<img alt="Pet 2" src="img/ad5-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Tom</h3>
+						<p class="ong-subtitle">Aprox. 3 anos, vacinas básicas, </br>castrado e vermifugado
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>					
+					</figure>
+
+					<!-- Pet Item 3 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-3">
+							<img alt="Pet 3" src="img/ad6-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Preciosa</h3>
+						<p class="ong-subtitle">Aprox. 3 anos, vacinas básicas, </br>castrada e vermifugada 
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>					
+
+					<!-- Pet Item 4 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-4">
+							<img alt="Pet 4" src="img/ad3-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Thor</h3>
+						<p class="ong-subtitle">Cão idoso, 9+ anos, </br>castrado e vacinado
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+
+					<!-- Pet Item 5 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-5">
+							<img alt="Pet 5" src="img/ad7-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Cremosa</h3>
+						<p class="ong-subtitle">Aprox. 1 ano, vacinas básicas, </br>castração garantida
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>					
+					</figure>
+
+					<!-- Pet Item 6 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-6">
+							<img alt="Pet 6" src="img/ad10-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Molenga</h3>
+						<p class="ong-subtitle">Aprox. 5 anos, vacinas básicas, </br>castrado e vermifugado 
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+
+					<!-- Pet Item 7 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-7">
+							<img alt="Pet 7" src="img/ad4-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Matilda</h3>
+						<p class="ong-subtitle">Aprox. 1 ano, pequeno porte 
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+
+					<!-- Pet Item 8 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-8">
+							<img alt="Pet 8" src="img/ad8-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Juju</h3>
+						<p class="ong-subtitle">Tranquila e dócil
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>
+					</figure>	
+
+					<!-- Pet Item 9 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-9">
+							<img alt="Pet 8" src="img/ad12-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Chefe</h3>
+						<p class="ong-subtitle">Aprox. 1 ano, pequeno porte
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>
+					</figure>						
+
+					<!-- Pet Item 10 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-10">
+							<img alt="Pet 1" src="img/ad-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Luigi</h3>
+						<p class="ong-subtitle">Aprox. 4 anos, vacinas básicas, </br>castrado e vermifugado 
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+
+					<!-- Pet Item 11 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-11">
+							<img alt="Pet 2" src="img/ad9-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Geléia</h3>
+						<p class="ong-subtitle">Aprox. 2 anos, vacinas básicas, </br>castração garantida
+							</br> 
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>					
+					</figure>
+
+					<!-- Pet Item 12 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-12">
+							<img alt="Pet 3" src="img/ad13-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Frodo</h3>
+						<p class="ong-subtitle">Aprox. 8 meses, vacinas básicas, </br>castração garantida
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>					
+
+					<!-- Pet Item 13 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-13">
+							<img alt="Pet 3" src="img/ad11-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Merlin</h3>
+						<p class="ong-subtitle">Cão idoso, 9+ anos, </br>castrado e vacinado 
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+					
+					<!-- Pet Item 14 -->
+					<figure class="col-sm-6 col-lg-4 text-center gall-item">
+						<a href="" data-toggle="modal" data-target="#pet-modal-14">
+							<img alt="Pet 3" src="img/ad14-06.png" class="img-fluid img-thumbnail gall-img">
+						</a>
+						<h3 class="ong-title">Parker</h3>
+						<p class="ong-subtitle">Aprox. 3 anos, vacinas básicas, </br>castrado e vermifugado 
+							</br>
+							<a class="" target="_blank" href="https://abrigosaolazaro.org.br/">
+								Link do Abrigo
+							</a>
+						</p>						
+					</figure>
+					
+				</div>
+				
+				<p class="text-left lead">* O conteúdo apresentando aqui é apenas ilustrativo, mas você pode encontrar muitos 
+				animaizinhos que precisam de um lar nas Instituições que estamos divulgando. 
+					<a href="ongs.html">Confere Aqui.</a>
+				</p>					
+				
+			</div>
+		</section>
+
+		<button id="myBtn" title="Voltar ao início">
+			<img src="img/top.png" id="top-img" class="img-fluid" alt="imagem">
+		</button>
+		
+		<!-- Destaque das Imagens (Modal) -->
+		
+		<!-- Pet Modal 1 -->
+		<div class="modal fade" id="pet-modal-1" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 1-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Dionísio</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="dep-carousel" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#dep-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#dep-carousel" data-slide-to="1"></li>
+								<li data-target="#dep-carousel" data-slide-to="2"></li>
+								<li data-target="#dep-carousel" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#dep-carousel" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#dep-carousel" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 2 -->
+		<div class="modal fade" id="pet-modal-2" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 2-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Tom</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-2" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-2" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-2" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-2" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-2" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-2" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-2" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<!-- Pet Modal 3 -->
+		<div class="modal fade" id="pet-modal-3" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 3-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Preciosa</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-3" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-3" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-3" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-3" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-3" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-3" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-3" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 4 -->
+		<div class="modal fade" id="pet-modal-4" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 4-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Thor</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-4" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-4" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-4" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-4" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-4" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-4" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-4" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 5 -->
+		<div class="modal fade" id="pet-modal-5" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 5-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Cremosa</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-5" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-5" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-5" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-5" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-5" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-5" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-5" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 6 -->
+		<div class="modal fade" id="pet-modal-6" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 6-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Molenga</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-6" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-6" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-6" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-6" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-6" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-6" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-6" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 7 -->
+		<div class="modal fade" id="pet-modal-7" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 7-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Matilda</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-7" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-7" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-7" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-7" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-7" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-7" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-7" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 8 -->
+		<div class="modal fade" id="pet-modal-8" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 8-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Juju</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-8" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-8" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-8" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-8" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-8" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-8" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-8" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 9 -->
+		<div class="modal fade" id="pet-modal-9" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 9-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Chefe</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-9" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-9" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-9" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-9" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-9" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-9" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-9" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Pet Modal 10 -->
+		<div class="modal fade" id="pet-modal-10" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 10-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Luigi</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-10" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-10" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-10" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-10" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-10" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-10" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-10" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<!-- Pet Modal 11 -->
+		<div class="modal fade" id="pet-modal-11" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 11-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Geléia</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-11" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-11" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-11" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-11" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-11" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-11" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-11" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>			
+		
+		<!-- Pet Modal 12 -->
+		<div class="modal fade" id="pet-modal-12" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 12-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Frodo</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-12" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-12" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-12" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-12" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-12" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-12" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-12" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>			
+
+		<!-- Pet Modal 13 -->
+		<div class="modal fade" id="pet-modal-13" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 13-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Merlin</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-13" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-13" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-13" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-13" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-13" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-13" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-13" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>			
+
+		<!-- Pet Modal 14 -->
+		<div class="modal fade" id="pet-modal-14" role="dialog">		
+			<div class="modal-dialog modal-lg gall-modal">
+				<!-- Conteúdo da Modal 14-->
+				<div class="modal-content">		
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Parker</h4>
+					</div>
+					<div class="modal-body">
+
+						<div id="pet-carousel-14" class="carousel slide">
+							
+							<!-- Indicadores -->
+							<ol class="carousel-indicators">
+								<li data-target="#pet-carousel-14" data-slide-to="0" class="active"></li>
+								<li data-target="#pet-carousel-14" data-slide-to="1"></li>
+								<li data-target="#pet-carousel-14" data-slide-to="2"></li>
+								<li data-target="#pet-carousel-14" data-slide-to="3"></li>				
+							</ol>
+
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<center><img src="img/neko1.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko2.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko3.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>
+								<div class="item">
+									<center><img src="img/neko4.png" id="" class="img-responsive img-fluid" alt="imagem"></center>
+								</div>				
+							</div>
+							
+							<!-- Controles -->
+							<a class="left carousel-control" href="#pet-carousel-14" role="button" data-slide="prev">
+								<span>
+									<img src="img/arrow-left.png" id="" class="icon-prev img-responsive img-fluid" alt="esquerda">
+								</span>
+								<span class="sr-only">Previous</span>
+							</a>	
+							<a class="right carousel-control" href="#pet-carousel-14" role="button" data-slide="next">
+								<span>
+									<img src="img/arrow-right.png" id="" class="icon-prev img-responsive img-fluid" alt="direita">
+								</span>
+								<span class="sr-only">Next</span>
+							</a>							
+							
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>			
+
+	
+	</main>
+
+	<footer>
+
+		<div class="footer-above"> <!-- Footer Superior -->
+			<div class="container">
+				<div class="row">
+					<!-- Footer: Primeira Coluna (logo) -->
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<a href="index.html"><img src="img/logo-vert-light.png" id="simple-logo" class="img-fluid" alt="logo simples"></a>
+					</div>
+					<!-- Footer: Segunda Coluna (redes sociais) -->					
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<!-- Redes Sociais: Lista Superior -->
+						<ul class="list-inline" id="list-footer">
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/">
+									<img src="img/facebook-w.png" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/">
+									<img src="img/instagram-w.png" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://twitter.com/">
+									<img src="img/twitter-w.png" class="btn-pets social" alt="twitter">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.youtube.com/">
+									<img src="img/youtube-w.png" class="btn-pets social" alt="youtube">
+								</a>
+								</a>
+							</li>	
+						</ul>							
+					</div>
+					<!-- Footer: Terceira Coluna -->						
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<img src="img/ft-temp.png" id="ft-img" class="img-fluid img-responsive" alt="imagem">							
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-below"> <!-- Footer Inferior -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; 2022 Projeto Gráfico 3 – Todos os direitos reservados</p>
+                    </div>					
+                </div>
+            </div>
+        </div>
+	
+	</footer>
+
+
+</body>
+
+<html>

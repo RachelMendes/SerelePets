@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SerelePets</title>
+	<link rel="icon" type="image/x-icon" href="img/fav-pets.ico">
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.pets.css">	
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap">	
+
+    <!-- Arquivos JS -->	
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/script-pets.js" type="text/javascript"></script>	
+	
+</head>
+
+<body>
+
+	<!-- Barra de Navegação (menu principal) -->
+    <nav class="navbar navbar-default navbar-fixed-top menu-top" role="navigation">
+		<div class="container">
+		
+			<!-- Dependendo do tamanho da tela a barra de navegação pode se agrupar ou voltar a se expandir.
+				Em telas pequenas, os links do menu são substituídos por um botão no canto superior esquerdo.
+				Nessa situação, somente quando o botão é clicado, os links serão mostrados. -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meu-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button>
+				<!-- Logo Site -->
+				<a class="navbar-left" href="index.html"><img src="img/logo-hor.png" id="main-logo" alt="logo"/></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="meu-menu">
+				<!-- Lista de Páginas Disponíveis -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ongs.html">Instituições/ONGs</a></li>
+					<li class="active"><a href="ajuda.html">Como Ajudar?</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">SerelePets
+						<span class="caret"></span></a></a>
+						<ul class="dropdown-menu" id="drop-pets">
+						  <li><a href="adocao.html">Adoção</a></li>
+						  <li><a href="adotados.html">Adotados</a></li>
+						</ul>						
+					</li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>			
+		
+		</div>
+	</nav>
+	
+	<!-- Conteúdo Principal -->
+	<main class="main-div" id="main">
+	
+		<!-- Help Section -->
+		<section class="page-section" id="help">
+			<div class="container">
+			
+				<div class="row row-title">			
+					<span class="icon-title"><img alt="pata" src="img/pata.png" class=""></span>			
+					<h1 class="text-left title">Como Ajudar?</h1>
+				</div>				
+
+				<p class="text-left lead">Não pode adotar um novo pet agora, mas se interessou pela causa e quer saber como ajudar? 
+				Não desanima não, existem diversas formas de ajudar, confere abaixo.</p>
+			
+				<!-- Help Item 1 -->
+				<div class="row help-item">					
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Doações" src="img/marca-doa.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Doações</h3>
+						<p class="help-p">Como a maioria das Instituições e ONG’s não recebem auxílio do Governo, elas sobreviem de doações, 
+						tanto de rações, remédios, serviços, quanto de ajuda em dinheiro, para custear as despesas dos animais, do local onde 
+						ficam e dar continuidade aos seus projetos.</p>
+						<p class="help-p">Além de colaborar diretamente com causas e necessidades atuais das Instituições e ONG’s, 
+						as doações também permitem que mais animais possam ser ajudados futuramente.</p>
+					</div>
+				</div>
+				<hr class="help-hr">
+
+				<!-- Help Item 2 -->
+				<div class="row help-item">					
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Apadrinhamento</h3>
+						<p class="help-p">O apadrinhamento é outra maneira de ajudar diretamente um animal. Nele você pode apadrinhar um animal 
+						que ainda não encontrou a sua família, ajudando com um valor mensal que serve para custear suas despesas enquanto ele 
+						ainda se encontra na ONG. </p>
+						<p class="help-p">As ONG’s informam aos padrinhos sobre o animal com frequência, para que possam acompanhar a rotina 
+						e o desenvolvimento do animal, além de poder visitar, brincar e se divertir passando um tempo com ele.</p>
+					</div>
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Apadrinhamento" src="img/marca-apd.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>					
+				</div>
+				<hr class="help-hr">
+
+				<!-- Help Item 3 -->
+				<div class="row help-item">					
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Lar Temporário" src="img/marca-temp.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Lar Temporário</h3>
+						<p class="help-p">É uma opção para as pessoas que não podem acolher definitivamente um animal, mas que podem abrigá-lo 
+						até que consiga encontrar seu lar, ajudando assim de maneira temporária.</p>
+					</div>
+				</div>
+				<hr class="help-hr">
+
+				<!-- Help Item 4 -->
+				<div class="row help-item">					
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Voluntariado</h3>
+						<p class="help-p">O voluntário atua diretamente com as ONG’s, doando seu tempo e habilidades para ajudar nas atividades 
+						internas e externas.</p>
+						<p class="help-p">Podendo participar de feiras de adoção, bazares organizados para arrecadação, em mutirões de banho, limpeza dos abrigos 
+						ou mesmo apenas dedicando seu tempo para visitar e brincar com os animalzinhos que sempre precisam de atenção.</p>
+					</div>
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Voluntariado" src="img/marca-vol.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>					
+				</div>
+				<hr class="help-hr">				
+				
+				<!-- Help Item 5 -->
+				<div class="row help-item">					
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Oferecer Serviços" src="img/marca-serv.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Oferecer Serviços</h3>
+						<p class="help-p">A oferta de serviços especializados é muito importante. Assim como no voluntariado, você pode
+						oferecer sua ajuda profissional.</p>
+						<p class="help-p">Por exemplo, se for designer gráfico pode oferecer suas habilidades para criar produtos gráficos;
+						se for advogado, pode se propor a cuidar de assuntos burocráticos das ONGs.</p> 
+						<p class="help-p">Sempre tem um espaço para ajudar.</p>
+					</div>
+				</div>
+				<hr class="help-hr">
+
+				<!-- Help Item 6 -->
+				<div class="row help-item">					
+					<div class="col-sm-6 col-lg-8 help-text-item">
+						<h3 class="help-title">Captação de Doações</h3>
+						<p class="help-p">E ainda, caso não possa ajudar de nenhuma maneira anterior, não tem problema, t
+						ambém existe uma última forma de ajudar, a divulgação. O que as ONGs mais precisam é ficarem conhecidas!</p>
+						<p class="help-p">Divulgando-as você estará ajudando a achar novos contribuintes, mantendo assim suas portas
+						abertas para continuarem desenvolvendo seu trabalho.</p>
+					</div>
+					<figure class="col-sm-6 col-lg-4 help-img">
+						<center>
+							<img alt="Captação de Doações" src="img/marca-cap.png" class="img-responsive img-fluid help-img-in">
+						</center>
+					</figure>					
+				</div>	
+				
+			</div>
+		</section>		
+
+		<button id="myBtn" title="Voltar ao início">
+			<img src="img/top.png" id="top-img" class="img-fluid" alt="imagem">
+		</button>
+	
+	</main>
+
+
+	<footer>
+
+		<div class="footer-above"> <!-- Footer Superior -->
+			<div class="container">
+				<div class="row">
+					<!-- Footer: Primeira Coluna (logo) -->
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<a href="index.html"><img src="img/logo-vert-light.png" id="simple-logo" class="img-fluid" alt="logo simples"></a>
+					</div>
+					<!-- Footer: Segunda Coluna (redes sociais) -->					
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<!-- Redes Sociais: Lista Superior -->
+						<ul class="list-inline" id="list-footer">
+							<li>
+								<a class="" target="_blank" href="https://www.facebook.com/">
+									<img src="img/facebook-w.png" class="btn-pets social" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.instagram.com/">
+									<img src="img/instagram-w.png" class="btn-pets social" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://twitter.com/">
+									<img src="img/twitter-w.png" class="btn-pets social" alt="twitter">
+								</a>
+							</li>
+							<li>
+								<a class="" target="_blank" href="https://www.youtube.com/">
+									<img src="img/youtube-w.png" class="btn-pets social" alt="youtube">
+								</a>
+								</a>
+							</li>	
+						</ul>							
+					</div>
+					<!-- Footer: Terceira Coluna -->						
+					<div class="col-md-3 col-md-offset-1 footer-col">
+						<img src="img/ft-temp.png" id="ft-img" class="img-fluid img-responsive" alt="imagem">							
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-below"> <!-- Footer Inferior -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; 2022 Projeto Gráfico 3 – Todos os direitos reservados</p>
+                    </div>					
+                </div>
+            </div>
+        </div>
+	
+	</footer>
+
+
+</body>
+
+<html>
